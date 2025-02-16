@@ -8,12 +8,14 @@ type DragEventBindings = {
     drag: (e: DragEvent) => unknown
     end: (e: DragEvent) => unknown
   }
+  arg?: string
 }
 
 export const vDrag = {
   mounted(el: ExtendedDragElement, binding: DragEventBindings) {
     // Define the drag event handler
     el.draggable = true
+    el.classList.add(binding.arg ?? 'draggable-element')
 
     const isBindingValueUndefined = () => {
       return binding.value === undefined
@@ -60,6 +62,7 @@ export const vDrag = {
   beforeUnmount(el: ExtendedDragElement) {
     // Remove the event listener when the element is unmounted
     el.draggable = false
+    el.classList.remove('draggable-element')
     if (el._clearEvents) {
       el._clearEvents()
     }

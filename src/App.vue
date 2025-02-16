@@ -32,7 +32,7 @@ const dragEvents = {
     <h1>Directive Examples</h1>
 
     <section>
-      <h2 v-drag="dragEvents">v-focus</h2>
+      <h2 v-drag:draggable="dragEvents">v-focus</h2>
       <div>
         <input type="text" placeholder="Focus on me" v-focus />
       </div>
@@ -121,3 +121,21 @@ const dragEvents = {
     </section>
   </div>
 </template>
+
+<style scoped>
+.draggable {
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+  position: relative;
+  border: 2px dashed #4caf50;
+  color: #4caf50;
+  font-weight: bold;
+}
+</style>

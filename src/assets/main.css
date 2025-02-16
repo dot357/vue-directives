@@ -1,1 +1,12 @@
 @import './base.css';
+
+.draggable-element {
+  width: 200px;
+  height: 100px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  cursor: move;
+  position: relative;
+}
