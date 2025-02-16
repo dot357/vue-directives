@@ -49,5 +49,38 @@ const handleInput = (event) => {
         <input type="text" placeholder="Debounce on me" v-debounce:500="handleInput" />
       </div>
     </section>
+
+    <section>
+      <h2>v-lazy</h2>
+
+      <div
+        style="
+          height: 1200px;
+          background-color: #ff000021;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            height: 600px;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: auto;
+          "
+        >
+          <img
+            v-lazy
+            data-src="https://images.unsplash.com/photo-1739381337576-d14376e305d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Unslah image"
+            style="aspect-ratio: 2 1; height: 100%; width: 100%; object-fit: cover"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
