@@ -31,6 +31,12 @@ const resizableEvents = {
     console.log('Resizing:', e)
   },
 }
+
+const scrollEvents = {
+  onScroll() {
+    console.log('scrolling')
+  },
+}
 </script>
 
 <template>
@@ -124,6 +130,55 @@ const resizableEvents = {
           </div>
           <button @click="toggleDropdown">Toggle Dropdown</button>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>v-scroll</h2>
+      <div v-scroll:200="scrollEvents" style="background-color: gray; color: white">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum eligendi, quasi
+          impedit, illum ut beatae ratione aut fugit cupiditate id nihil fuga distinctio at, dolore
+          repellendus officiis quis excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Iusto quas nemo maiores officia molestiae alias sequi. Unde, cum et vel ea illum est
+          officia sit doloremque, ducimus neque beatae eveniet? Nisi nulla eum fuga adipisci
+          mollitia perferendis quidem placeat tempore ipsa vitae dolore ducimus pariatur, expedita
+          ea harum, iste quo recusandae culpa sed aliquam obcaecati tenetur quas nam amet. Vitae?
+          Rem debitis ut architecto. Architecto doloribus tempora ducimus mollitia cum ad, officia
+          aspernatur iure. Maiores, unde. Aut cupiditate ut assumenda porro. Fuga velit aperiam
+          asperiores consectetur animi tenetur provident accusantium? Velit amet quaerat
+          necessitatibus blanditiis voluptate, laudantium tempore, quisquam ullam facilis facere,
+          vitae dicta at cum? Iste dolore laudantium cumque quae commodi a recusandae voluptas
+          similique. Totam veritatis suscipit iusto. Molestiae aspernatur quae est id suscipit,
+          perspiciatis amet quasi assumenda rem atque recusandae nemo libero, vero iste quaerat.
+          Eligendi minus quaerat voluptate, aperiam adipisci facere omnis nihil quae recusandae
+          magnam! Expedita, sint? Eaque magni excepturi autem? Ad earum magni dicta dolores adipisci
+          temporibus, perspiciatis vitae nam nisi modi neque distinctio amet. Quasi, inventore?
+          Porro dolores, enim nam ea nostrum alias. Dolores rem quis explicabo quos, asperiores
+          perspiciatis deserunt sit magni molestiae nobis perferendis minima id voluptas delectus
+          adipisci vero amet fuga pariatur libero, aperiam aspernatur? Suscipit repellat nobis
+          consequuntur incidunt. Incidunt eaque culpa dolore. Maxime numquam velit, amet nobis
+          laudantium quam ipsam totam quia, deserunt soluta similique id quos dicta in. Error amet
+          quia a atque aut cumque vero eum! Error fugiat dolorem provident recusandae ipsam itaque
+          excepturi quia nulla, doloremque quae reprehenderit possimus quibusdam numquam totam
+          perferendis. Eveniet dolor dicta facilis. Nesciunt sed nam aut explicabo sequi dolor amet!
+          Dolorem cum voluptas magni omnis tempora recusandae nesciunt, autem quo quaerat quod
+          dicta? Laboriosam, adipisci fugiat. Animi qui iusto ab cum magnam in corporis, odit culpa
+          ipsam error! Reprehenderit, quia? Laborum totam id praesentium. Assumenda exercitationem
+          reiciendis dolore! Tempore repellendus sint aliquid in tempora nemo alias? Quisquam
+          quibusdam doloribus dolorem qui, similique debitis esse itaque, odit porro, totam quae
+          culpa. Similique, eveniet rerum fugiat veritatis ipsa odit quaerat eligendi nisi amet vero
+          accusamus libero vel necessitatibus maiores incidunt voluptates voluptatibus qui aperiam
+          saepe repellendus cum, asperiores doloribus aut assumenda. Excepturi! Sapiente nisi
+          architecto quo fugit hic rerum iure quibusdam, nihil sequi quaerat, harum dolorum
+          veritatis a adipisci quis ea non deleniti neque impedit! Iure, ducimus. Culpa officiis
+          laboriosam quas expedita. Veniam dolorum omnis cum velit, dolore eos iste dicta quo sequi.
+          Exercitationem neque pariatur magni numquam ipsam facilis corrupti! Rerum laborum
+          voluptatem optio aspernatur ea consequuntur assumenda, sapiente voluptates aut.
+          Voluptatibus dicta officiis ea necessitatibus beatae quas quo aperiam ratione dolor, ab
+          distinctio numquam incidunt, unde minus! Consectetur inventore laudantium, repudiandae
+          ducimus fuga aspernatur accusantium nihil fugit! Cumque, ullam adipisci!
+        </p>
       </div>
     </section>
   </div>

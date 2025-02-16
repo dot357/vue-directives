@@ -10,6 +10,8 @@ import { vLazy } from './directives/lazyLoadCustomDirective'
 import { vClickOutside } from './directives/clickOutsideCustomDirective'
 import { vDrag } from './directives/dragCustomDirective'
 import { vResizable } from './directives/resizableCustomDirective'
+import { vScroll } from './directives/scrollCustomComponent'
+
 const app = createApp(App)
 
 app.use(createPinia())
@@ -21,5 +23,6 @@ app.directive('lazy', vLazy)
 app.directive('click-outside', vClickOutside)
 app.directive('drag', vDrag)
 app.directive('resizable', vResizable)
+app.directive('scroll', vScroll)
 
 app.mount('#app')
