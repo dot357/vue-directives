@@ -1,6 +1,17 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 const handleInput = (event) => {
   console.log('Debounced input:', event.target.value)
+}
+
+const isOpen = ref(false)
+
+const toggleDropdown = () => {
+  isOpen.value = !isOpen.value
+}
+
+const closeDropdown = () => {
+  isOpen.value = false
 }
 </script>
 
@@ -79,6 +90,20 @@ const handleInput = (event) => {
             alt="Unslah image"
             style="aspect-ratio: 2 1; height: 100%; width: 100%; object-fit: cover"
           />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>v-click-outside</h2>
+
+      <div>
+        <div v-click-outside="closeDropdown">
+          <div v-if="isOpen" class="dropdown-content">
+            <!-- Your dropdown content here -->
+            <p>Dropdown content...</p>
+          </div>
+          <button @click="toggleDropdown">Toggle Dropdown</button>
         </div>
       </div>
     </section>
