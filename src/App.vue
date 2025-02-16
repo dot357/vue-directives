@@ -13,6 +13,18 @@ const toggleDropdown = () => {
 const closeDropdown = () => {
   isOpen.value = false
 }
+
+const dragEvents = {
+  start(e) {
+    console.log('Drag started:', e)
+  },
+  drag(e) {
+    console.log('Dragging:', e.clientX, e.clientY)
+  },
+  end(e) {
+    console.log('Drag ended:', e)
+  },
+}
 </script>
 
 <template>
@@ -20,7 +32,7 @@ const closeDropdown = () => {
     <h1>Directive Examples</h1>
 
     <section>
-      <h2>v-focus</h2>
+      <h2 v-drag="dragEvents">v-focus</h2>
       <div>
         <input type="text" placeholder="Focus on me" v-focus />
       </div>

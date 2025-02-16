@@ -8,6 +8,7 @@ import { vTooltip } from './directives/tooltipCustomDirective'
 import { vDebounce } from './directives/debounceCustomDirective'
 import { vLazy } from './directives/lazyLoadCustomDirective'
 import { vClickOutside } from './directives/clickOutsideCustomDirective'
+import { vDrag } from './directives/dragCustomDirective'
 
 const app = createApp(App)
 
@@ -18,5 +19,6 @@ app.directive('tooltip', vTooltip)
 app.directive('debounce', vDebounce)
 app.directive('lazy', vLazy)
 app.directive('click-outside', vClickOutside)
+app.directive('drag', vDrag)
 
 app.mount('#app')
