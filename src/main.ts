@@ -10,7 +10,7 @@ import { vLazy } from './directives/lazyLoadCustomDirective'
 import { vClickOutside } from './directives/clickOutsideCustomDirective'
 import { vDrag } from './directives/dragCustomDirective'
 import { vResizable } from './directives/resizableCustomDirective'
-import { vScroll } from './directives/scrollCustomComponent'
+import { vScroll } from './directives/scrollCustomDirective'
 
 const app = createApp(App)
 
