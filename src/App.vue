@@ -181,6 +181,54 @@ const scrollEvents = {
         </p>
       </div>
     </section>
+
+    <section class="dark-mode-section">
+      <h2>v-dark-mode</h2>
+      <div>
+        <div>
+          <h3>Light</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum eligendi, quasi
+            impedit, illum ut beatae ratione aut fugit cupiditate id nihil fuga distinctio at,
+            dolore repellendus officiis quis excepturi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iusto quas nemo maiores officia molestiae alias sequi. Unde, cum et
+            vel ea illum est officia sit doloremque, ducimus neque beatae eveniet? Nisi nulla eum
+            fuga adipisci mollitia perferendis quidem placeat tempore ipsa vitae dolore ducimus
+            pariatur, expedita ea harum, iste quo recusandae culpa sed aliquam obcaecati tenetur
+            quas nam amet. Vitae? Rem debitis ut architecto. Architecto doloribus tempora ducimus
+            mollitia cum ad, officia aspernatur iure. Maiores, unde. Aut cupiditate ut assumenda
+            porro. Fuga velit aperiam asperiores consectetur animi tenetur provident accusantium?
+            Velit amet quaerat necessitatibus blanditiis voluptate, laudantium tempore, quisquam
+            ullam facilis facere, vitae dicta at cum? Iste dolore laudantium cumque quae commodi a
+            recusandae voluptas similique. Totam veritatis suscipit iusto. Molestiae aspernatur quae
+            est id suscipit, perspiciatis amet quasi assumenda rem atque recusandae nemo libero,
+            vero iste quaerat. Eligendi minus quaerat voluptate, aperiam adipisci facere omnis nihil
+            quae recusandae magnam!
+          </p>
+        </div>
+        <div v-dark-mode>
+          <h3>Dark</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi earum eligendi, quasi
+            impedit, illum ut beatae ratione aut fugit cupiditate id nihil fuga distinctio at,
+            dolore repellendus officiis quis excepturi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iusto quas nemo maiores officia molestiae alias sequi. Unde, cum et
+            vel ea illum est officia sit doloremque, ducimus neque beatae eveniet? Nisi nulla eum
+            fuga adipisci mollitia perferendis quidem placeat tempore ipsa vitae dolore ducimus
+            pariatur, expedita ea harum, iste quo recusandae culpa sed aliquam obcaecati tenetur
+            quas nam amet. Vitae? Rem debitis ut architecto. Architecto doloribus tempora ducimus
+            mollitia cum ad, officia aspernatur iure. Maiores, unde. Aut cupiditate ut assumenda
+            porro. Fuga velit aperiam asperiores consectetur animi tenetur provident accusantium?
+            Velit amet quaerat necessitatibus blanditiis voluptate, laudantium tempore, quisquam
+            ullam facilis facere, vitae dicta at cum? Iste dolore laudantium cumque quae commodi a
+            recusandae voluptas similique. Totam veritatis suscipit iusto. Molestiae aspernatur quae
+            est id suscipit, perspiciatis amet quasi assumenda rem atque recusandae nemo libero,
+            vero iste quaerat. Eligendi minus quaerat voluptate, aperiam adipisci facere omnis nihil
+            quae recusandae magnam!
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -199,5 +247,15 @@ const scrollEvents = {
   border: 2px dashed #4caf50;
   color: #4caf50;
   font-weight: bold;
+}
+
+.dark-mode-section {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode-section .prefers-dark {
+  background-color: black;
+  color: white;
 }
 </style>

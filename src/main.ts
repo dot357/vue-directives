@@ -11,6 +11,7 @@ import { vClickOutside } from './directives/clickOutsideCustomDirective'
 import { vDrag } from './directives/dragCustomDirective'
 import { vResizable } from './directives/resizableCustomDirective'
 import { vScroll } from './directives/scrollCustomDirective'
+import { vDarkMode } from './directives/darkModeCustomDirective'
 
 const app = createApp(App)
 
@@ -24,5 +25,6 @@ app.directive('click-outside', vClickOutside)
 app.directive('drag', vDrag)
 app.directive('resizable', vResizable)
 app.directive('scroll', vScroll)
+app.directive('dark-mode', vDarkMode)
 
 app.mount('#app')
