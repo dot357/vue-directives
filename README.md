@@ -1,45 +1,34 @@
 # vue-directive
 
-This template should help get you started developing with Vue 3 in Vite.
+This repo contains simple yet efective examples for vue-directive.
 
-## Recommended IDE Setup
+## Vue 3 Custom directives
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+https://vuejs.org/guide/reusability/custom-directives
 
-## Type Support for `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## List of directive examples
 
-```sh
-npm run build
-```
+List of directives can be found in the `src/directives` folder.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. `v-focus` : Auto-focus on an input field
+2. `v-tooltip` : Custom tooltip directive
+3. `v-debounce` : Debounce input for performance
+4. `v-lazy` : Lazy load images
+5. `v-click-outside` : Detect clicks outside an element
+6. `v-drag` : Make an element draggable
+7. `v-resize` : Make an element resizable
+8. `v-scroll` : Make an element scrollable
+9. `v-dark-mode` : Toggle dark mode
+10. `v-long-press` : Detect long press
