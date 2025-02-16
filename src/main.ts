@@ -12,6 +12,7 @@ import { vDrag } from './directives/dragCustomDirective'
 import { vResizable } from './directives/resizableCustomDirective'
 import { vScroll } from './directives/scrollCustomDirective'
 import { vDarkMode } from './directives/darkModeCustomDirective'
+import { vLongPress } from './directives/longPressDirective'
 
 const app = createApp(App)
 
@@ -26,5 +27,6 @@ app.directive('drag', vDrag)
 app.directive('resizable', vResizable)
 app.directive('scroll', vScroll)
 app.directive('dark-mode', vDarkMode)
+app.directive('long-press', vLongPress)
 
 app.mount('#app')

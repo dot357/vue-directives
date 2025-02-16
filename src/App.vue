@@ -37,6 +37,12 @@ const scrollEvents = {
     console.log('scrolling')
   },
 }
+
+const longPressEvents = {
+  onLongPress(props) {
+    console.log('Long pressing', props)
+  },
+}
 </script>
 
 <template>
@@ -227,6 +233,13 @@ const scrollEvents = {
             quae recusandae magnam!
           </p>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>v-long-press</h2>
+      <div>
+        <button v-long-press="longPressEvents">Long press me</button>
       </div>
     </section>
   </div>
