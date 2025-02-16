@@ -25,6 +25,12 @@ const dragEvents = {
     console.log('Drag ended:', e)
   },
 }
+
+const resizableEvents = {
+  onResize(e) {
+    console.log('Resizing:', e)
+  },
+}
 </script>
 
 <template>
@@ -73,7 +79,7 @@ const dragEvents = {
       </div>
     </section>
 
-    <section>
+    <section v-resizable="resizableEvents">
       <h2>v-lazy</h2>
 
       <div
@@ -87,8 +93,9 @@ const dragEvents = {
       >
         <div
           style="
+            width: 500px;
             height: 600px;
-            background-color: blue;
+
             display: flex;
             flex-direction: row;
             align-items: center;
